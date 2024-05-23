@@ -45,7 +45,9 @@ h1 span {
     font-weight: 600;
 }
 
-.FormControl input, .FormControl select, .FormControl textarea {
+.FormControl input,
+.FormControl select,
+.FormControl textarea {
     width: 100%;
     margin-top: 10px;
     border-radius: 5px;
@@ -78,7 +80,14 @@ h1 span {
     transition: 0.2s ease-in-out;
 }
 
-input:focus, textarea:focus {
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus,
+textarea:focus {
     outline-color: rgb(202, 156, 7);
 }
 
@@ -94,7 +103,9 @@ input:focus, textarea:focus {
         gap: 30px;
     }
 
-    .FormControl input, .FormControl select, .FormControl textarea {
+    .FormControl input,
+    .FormControl select,
+    .FormControl textarea {
         width: 60%;
     }
 }

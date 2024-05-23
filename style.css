@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter";
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #A9A9A9;
+}
+
+.Container {
+    background-color: #FFFFFF;
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.3);
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+h1 span {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.FormContainer {
+    display: grid;
+    grid-template-rows: repeat(5, 100px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.FormControl {
+    height: 100%;
+}
+
+.FormControl label {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.FormControl input, .FormControl select, .FormControl textarea {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1.15rem;
+    padding: 10px 10px;
+}
+
+.AddressBox {
+    grid-column: 1/3;
+}
+
+.ResumeBox input {
+    font-weight: 600;
+}
+
+.ButtonContainer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.ButtonContainer button {
+    width: 170px;
+    height: 3rem;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.75rem;
+    transition: 0.2s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    outline-color: rgb(202, 156, 7);
+}
+
+.ButtonContainer button:hover {
+    background-color: rebeccapurple;
+    border: 2px solidblack;
+}
+
+@media (max-width: 750px) {
+    .FormContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .FormControl input, .FormControl select, .FormControl textarea {
+        width: 60%;
+    }
+}

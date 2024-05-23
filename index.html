@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Vinay Tambey" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title> Job Application Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="Container">
+
+        <h1>Job Application <span>(Web)</span></h1>
+
+        <form action="/server" method="get">
+
+            <div class="FormContainer">
+                <div class="FirstNameBox FormControl">
+                    <label for="fName">First Name</label> <br />
+                    <input type="text" id="fName" name="firstName" placeholder="Enter First Name..." required />
+                </div>
+
+                <div class="LastNameBox FormControl">
+                    <label for="lName">Last Name</label> <br />
+                    <input type="text" id="lName" name="lastName" placeholder="Enter First Name..." />
+                </div>
+
+                <div class="EmailBox FormControl">
+                    <label for="email">Email</label> <br />
+                    <input type="email" id="email" name="email" placeholder="Enter Email..." required />
+                </div>
+
+                <div class="JobRoleBox FormControl">
+                    <label for="role">Job Role</label> <br />
+                    <select id="role" name="role" required>
+                        <option>Select Job Role</option>
+                        <option value="frontend">Frontend Developer</option>
+                        <option value="backend">Backend Developer</option>
+                        <option value="full-stack">Full-Stack Developer</option>
+                        <option value="ui/ux">UI/UX Designer</option>
+                    </select>
+                </div>
+
+                <div class="AddressBox FormControl">
+                    <label for="addr">Address</label> <br />
+                    <textarea placeholder="Enter Address..."></textarea>
+                </div>
+
+                <div class="CityBox FormControl">
+                    <label for="city">City</label> <br />
+                    <input type="text" id="city" name="city" placeholder="Enter City Name..." />
+                </div>
+
+                <div class="PincodeBox FormControl">
+                    <label for="pcode">Pincode</label> <br />
+                    <input type="number" id="pcode" name="pincode" placeholder="Enter Pincode..." required />
+                </div>
+
+                <div class="DateBox FormControl">
+                    <label for="dte">Start Date</label> <br />
+                    <input value="2024-06-01" type="date" id="dte" name="date" required />
+                </div>
+
+                <div class="ResumeBox FormControl">
+                    <label for="cv">Upload Your CV/Resume</label> <br />
+                    <input type="file" id="cv" name="resume" required />
+                </div>
+            </div>
+
+            <div class="ButtonContainer">
+                <button type="submit">Apply Now</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
